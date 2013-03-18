@@ -1,0 +1,63 @@
+body {
+	background: #fff;
+	padding: 120px 0 300px;
+}
+.board {
+	background: url('../img/bg-404Game.png') no-repeat scroll 0 0 transparent;
+	margin:0 auto;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.square, .square div {
+	background: none;
+	color: transparent;
+	position:absolute;
+	display:block;
+}
+
+	.square {
+		height:40px;
+		width:40px;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+	}
+	.square.displayed {
+        background: #fff;
+    }
+		.square.select {
+			z-index:10;
+		}
+		.square.select div {
+			opacity: 0.5;
+			background: red;
+		}
+
+.square div {
+    border-radius: 0px !important;  /*to get over JS border-radius*/
+    border-style: solid;
+    border-width: 19px;
+    height: 0;
+    width: 0;
+}
+
+
+.square.seed0 div.top1 { border-color: #00457c transparent transparent #00457c; }
+.square.seed1 div.top1 { border-color: #00457c #00457c transparent transparent; }
+.square.seed0 div.bottom1 { border-color: transparent #00457c #00457c transparent; }
+.square.seed1 div.bottom1 { border-color: transparent transparent #00457c #00457c; }
+
+.square.seed0 div.top2 { border-color: #a2a1a6 transparent transparent #a2a1a6; }
+.square.seed1 div.top2 { border-color: #a2a1a6 #a2a1a6 transparent transparent; }
+.square.seed0 div.bottom2 { border-color: transparent #a2a1a6 #a2a1a6 transparent; }
+.square.seed1 div.bottom2 { border-color: transparent transparent #a2a1a6 #a2a1a6; }
+
+.square.seed0 div.top3 { border-color: #ffc420 transparent transparent #ffc420; }
+.square.seed1 div.top3 { border-color: #ffc420 #ffc420 transparent transparent; }
+.square.seed0 div.bottom3 { border-color: transparent #ffc420 #ffc420 transparent; }
+.square.seed1 div.bottom3 { border-color: transparent transparent #ffc420 #ffc420; }
+
+.square.seed0 div.top4 { border-color: #01bce5 transparent transparent #01bce5; }
+.square.seed1 div.top4 { border-color: #01bce5 #01bce5 transparent transparent; }
+.square.seed0 div.bottom4 { border-color: transparent #01bce5 #01bce5 transparent; }
+.square.seed1 div.bottom4 { border-color: transparent transparent #01bce5 #01bce5; }
